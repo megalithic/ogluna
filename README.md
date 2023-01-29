@@ -2,6 +2,10 @@
 
 ## 🚀 Setup
 
+To get right to using it, without local setup, visit: <https://ogviewer.fly.dev/>
+
+To set up locally:
+
 - Run `mix setup` to install and setup dependencies
 - Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 - Visit the the og|viewer in your browser of choice at <http://localhost:4003>
