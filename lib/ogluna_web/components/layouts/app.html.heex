@@ -1,0 +1,53 @@
+<header class="px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between border-b border-zinc-100 py-3">
+    <div class="flex items-center gap-4">
+      <p class="rounded-full px-2  font-medium leading-6">
+        <strong>og</strong>viewer
+      </p>
+    </div>
+    <div class="flex items-center gap-4">
+      <a
+        href="https://twitter.com/megalithic"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-[0.8125rem] font-semibold leading-6 text-zinc-900 hover:text-zinc-700"
+      >
+        @megalithic
+      </a>
+      <a
+        href="https://github.com/megalithic/ogluna"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-[0.8125rem] font-semibold leading-6 text-zinc-900 hover:text-zinc-700"
+      >
+        GitHub
+      </a>
+      <a
+        href="https://github.com/megalithic/ogluna/blob/main/README.md"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="rounded-lg bg-zinc-100 px-2 py-1 text-[0.8125rem] font-semibold leading-6 text-zinc-900 hover:bg-zinc-200/80 active:text-zinc-900/70"
+      >
+        README <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl">
+    <.flash kind={:info} title="Success!" flash={@flash} />
+    <.flash kind={:error} title="Error!" flash={@flash} />
+    <.flash
+      id="disconnected"
+      kind={:error}
+      title="We can't find the internet"
+      close={false}
+      autoshow={false}
+      phx-disconnected={show("#disconnected")}
+      phx-connected={hide("#disconnected")}
+    >
+      Attempting to reconnect <Heroicons.arrow_path class="ml-1 w-3 h-3 inline animate-spin" />
+    </.flash>
+    <%= @inner_content %>
+  </div>
+</main>
