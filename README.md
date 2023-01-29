@@ -2,6 +2,8 @@
 
 ## 🚀 Setup
 
+_Please note: this app requires [Elixir](https://elixir-lang.org/) 1.14+ and [Erlang](https://elixir-lang.org/install.html#installing-erlang) 0.25+ to be installed on your system._
+
 To get right to using it, without local setup, visit: <https://ogviewer.fly.dev/>
 
 To set up locally:
