@@ -21,7 +21,7 @@ You can then enter a URL, such as `https://megalithic.io` to use as a test for g
 
 Once entering the URL, hit enter to submit the form. In real-time (asynchronously), a request to the URL will be made to gather the image; if it fails, you'll receive an error.
 
-I'm using the default-bundled topbar node module to handle the "in-progress" interactions for the user.
+I'm using the default-bundled [`topbar`](https://github.com/buunguyen/topbar) node module to handle the "in-progress" interactions for the user.
 
 ## ✨ The Approach™
 
@@ -31,10 +31,10 @@ I added a handler to validate that the URL given is valid; if it is, we use [`Re
 
 _NOTE:_ the take home instructions mentioned persistence for this, however, there is no need; processing happens without any storage.
 
-### 🐉 Trade-offs/Additional things
+### 🐉 Trade-offs/Additional Thoughts
 
-I could have used the `type="url"` input element instead of a standard `text` element, however, I wanted to showcase the power of Phoenix LiveView's form bindings for handling the validations. One could have also offloaded this responsibility to a Phoenix hook, too, though you'd need access to this validation check in the live view, too.
+I could have used the `type="url"` input element instead of a standard `text` element, however, I wanted to showcase the power of Phoenix LiveView's form bindings for handling the validations. One could have also offloaded this responsibility to a Phoenix hook, though you'd also need access to this validation check in the live view.
 
 In addition, I've not included any tests, nor additional error handling for other potential error states.
 
-Before sending to production; I'd certainly include tests to handle a variety of inputs, and their expected behaviours (which would reveal those additional possible error states).
+Before sending to production; I'd certainly include tests to handle a variety of inputs, and their expected behaviors (which would reveal those additional possible error states).
