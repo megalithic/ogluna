@@ -11,7 +11,6 @@ defmodule Ogluna.Application do
       # Start the Telemetry supervisor
       OglunaWeb.Telemetry,
       # Start the Ecto repository
-      # Ogluna.Repo,
       # Start the PubSub system
       {Phoenix.PubSub, name: Ogluna.PubSub},
       # Start Finch
