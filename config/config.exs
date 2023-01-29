@@ -7,8 +7,8 @@
 # General application configuration
 import Config
 
-config :ogluna,
-  ecto_repos: [Ogluna.Repo]
+# config :ogluna,
+#   ecto_repos: [Ogluna.Repo]
 
 # Configures the endpoint
 config :ogluna, OglunaWeb.Endpoint,
