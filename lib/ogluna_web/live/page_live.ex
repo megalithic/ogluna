@@ -44,7 +44,7 @@ defmodule OglunaWeb.PageLive do
         phx-blur="validate"
         value={@og_url}
         class="w-[100%] rounded"
-        placeholder="insert url for previewing; ex: https://megalithic.io"
+        placeholder="type a valid url; ex: https://megalithic.io"
       />
       <a :if={not is_nil(@og_image)} rel="noopener noreferrer" target="_blank" href={@og_url}>
         <img
